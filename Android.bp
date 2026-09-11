@@ -22,6 +22,7 @@ cc_library_static {
     vendor_ramdisk_available: true,
     recovery_available: true,
     visibility: [
+        "//bootable/recovery/ui2",
         "//system/update_engine:__subpackages__",
         "//tools/security/fuzzing/llm/xz_fuzzer:__subpackages__",
     ],
@@ -45,6 +46,7 @@ cc_library_static {
         "-DXZ_DEC_X86",
         "-DXZ_DEC_ARM",
         "-DXZ_DEC_ARMTHUMB",
+        "-DXZ_DEC_ARM64",
         "-Wall",
         "-Werror",
     ],
