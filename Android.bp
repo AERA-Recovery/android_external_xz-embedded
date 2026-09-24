@@ -22,7 +22,7 @@ cc_library_static {
     vendor_ramdisk_available: true,
     recovery_available: true,
     visibility: [
-        "//bootable/recovery/ui2",
+        "//bootable/recovery/aeraui",
         "//system/update_engine:__subpackages__",
         "//tools/security/fuzzing/llm/xz_fuzzer:__subpackages__",
     ],
